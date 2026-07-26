@@ -11,6 +11,10 @@
 [ext_resource type="Texture2D" uid="uid://dt6orbw74nrk2" path="res://textures/bottle.png" id="6_tipki"]
 [ext_resource type="Texture2D" uid="uid://pgtxl7y6xy1e" path="res://textures/broad.png" id="7_85g3d"]
 [ext_resource type="AudioStream" uid="uid://cpgfe62u1xqmh" path="res://sounds/bgm.ogg" id="8_tipki"]
+[ext_resource type="Texture2D" uid="uid://m67qxwge80br" path="res://textures/candle.png" id="12_a8y0u"]
+[ext_resource type="Texture2D" uid="uid://br6yqw3p8dpos" path="res://textures/health.png" id="13_jkv2x"]
+[ext_resource type="Texture2D" uid="uid://dkipjrxale3sa" path="res://textures/hourglass.png" id="14_jbj1t"]
+[ext_resource type="PackedScene" uid="uid://bf2cghmy3br3q" path="res://scenes/menu.tscn" id="15_jkv2x"]
 
 [sub_resource type="Animation" id="Animation_o6xl0"]
 length = 0.001
@@ -180,6 +184,9 @@ script = ExtResource("1_o6xl0")
 
 [node name="Background" parent="." unique_id=2063045822 instance=ExtResource("1_sugp2")]
 
+[node name="Menu" parent="." unique_id=58652321 instance=ExtResource("15_jkv2x")]
+layer = 3
+
 [node name="Boat" type="Sprite2D" parent="." unique_id=521872738]
 position = Vector2(5137, 494)
 texture = ExtResource("3_sugp2")
@@ -267,3 +274,6 @@ drag_bottom_margin = 0.1
 stream = ExtResource("8_tipki")
 autoplay = true
 bus = &"Music"
+
+[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=127929468]
+color = Color(0.90090895, 0.90025246, 0.8801862, 1)

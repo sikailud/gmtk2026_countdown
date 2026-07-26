@@ -1,0 +1,6 @@
+[gd_resource type="Theme" format=3 uid="uid://7fhdgjcca37w"]
+
+[ext_resource type="FontFile" uid="uid://lwbsa474pu61" path="res://fonts/LoveYaLikeASister-Regular.ttf" id="1_e1x85"]
+
+[resource]
+default_font = ExtResource("1_e1x85")

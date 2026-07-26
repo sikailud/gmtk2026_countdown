@@ -201,7 +201,7 @@ libraries/ = SubResource("AnimationLibrary_85g3d")
 autoplay = &"idle"
 
 [node name="Player" parent="." unique_id=835197598 instance=ExtResource("1_o5qli")]
-position = Vector2(-180, 4264)
+position = Vector2(-979, 6525)
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Player" unique_id=152574381]
 position = Vector2(0, -99.31)
@@ -257,7 +257,7 @@ autoplay = &"cycle"
 speed_scale = 7.0
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=643625462]
-position = Vector2(-180, 4164.69)
+position = Vector2(-979, 6425.69)
 zoom = Vector2(0.9, 0.9)
 position_smoothing_enabled = true
 position_smoothing_speed = 8.0

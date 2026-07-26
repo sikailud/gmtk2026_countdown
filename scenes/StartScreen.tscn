@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://f0e0241tyi3d"]
+
+[ext_resource type="Script" uid="uid://c5kof7rfgi5n" path="res://scripts/start_screen.gd" id="1_4vrcr"]
+[ext_resource type="FontFile" uid="uid://lwbsa474pu61" path="res://fonts/LoveYaLikeASister-Regular.ttf" id="2_pswtb"]
+[ext_resource type="PackedScene" uid="uid://2y3nga1288xx" path="res://scenes/background.tscn" id="3_a0vbq"]
+
+[node name="Control" type="Control" unique_id=1634631277]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4vrcr")
+game_scene_path = "res://scenes/main.tscn"
+
+[node name="DialogueLabel" type="RichTextLabel" parent="." unique_id=354661122]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 297.0
+offset_top = 525.0
+offset_right = 297.0
+offset_bottom = 525.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(961, 535)
+theme_override_fonts/normal_font = ExtResource("2_pswtb")
+theme_override_font_sizes/normal_font_size = 49
+
+[node name="Background" parent="." unique_id=2063045822 instance=ExtResource("3_a0vbq")]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1216078308]
+position = Vector2(960, 536)

@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Countdown"
-run/main_scene="uid://xe8osuy1i3w6"
+run/main_scene="uid://f0e0241tyi3d"
 config/features=PackedStringArray("4.7", "Forward Plus")
 boot_splash/show_image=false
 

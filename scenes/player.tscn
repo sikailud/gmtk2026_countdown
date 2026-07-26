@@ -239,7 +239,6 @@ blend_point_1/pos = 1.0
 blend_point_1/name = &"move"
 
 [sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_dqkch"]
-graph_offset = Vector2(-317.9534, -184.76524)
 nodes/output/position = Vector2(300, -12.5)
 nodes/movement/node = SubResource("AnimationNodeBlendSpace1D_qhqgy")
 nodes/movement/position = Vector2(-87.5, -87.5)

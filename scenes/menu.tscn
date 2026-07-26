@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://bf2cghmy3br3q"]
+
+[ext_resource type="Script" uid="uid://dvvmd6ho66m10" path="res://scripts/menu.gd" id="1_yqeox"]
+[ext_resource type="Shader" uid="uid://b1jw5sfqkbupa" path="res://shaders/glitch.gdshader" id="2_vjb58"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_jkv2x"]
+shader = ExtResource("2_vjb58")
+shader_parameter/pixel_size = 3.0
+shader_parameter/vhs_intensity = 3.0
+shader_parameter/noise_intensity = 0.15
+shader_parameter/opacity = 0.5
+
+[node name="Menu" type="CanvasLayer" unique_id=58652321]
+process_mode = 3
+layer = 2
+script = ExtResource("1_yqeox")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2024229614]
+material = SubResource("ShaderMaterial_jkv2x")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.4745098)
+
+[node name="Button" type="Button" parent="." unique_id=1263381327]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 64
+text = "Press Any Key To Play"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

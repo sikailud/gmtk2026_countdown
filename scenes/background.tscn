@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c5462bv71hogk" path="res://scripts/background.gd" id="1_jougr"]
 [ext_resource type="Shader" uid="uid://cwrxey6dyv4i0" path="res://shaders/background.gdshader" id="2_cbsqf"]
-[ext_resource type="Texture2D" uid="uid://ca3vysk0361uy" path="res://textures/background_sky.png" id="3_wisxt"]
+[ext_resource type="Texture2D" uid="uid://qevg2sdrhsxm" path="res://textures/background_sky.png" id="3_wisxt"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_tipki"]
 shader = ExtResource("2_cbsqf")

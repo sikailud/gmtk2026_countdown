@@ -11,9 +11,6 @@
 [ext_resource type="Texture2D" uid="uid://dt6orbw74nrk2" path="res://textures/bottle.png" id="6_tipki"]
 [ext_resource type="Texture2D" uid="uid://pgtxl7y6xy1e" path="res://textures/broad.png" id="7_85g3d"]
 [ext_resource type="AudioStream" uid="uid://cpgfe62u1xqmh" path="res://sounds/bgm.ogg" id="8_tipki"]
-[ext_resource type="Texture2D" uid="uid://m67qxwge80br" path="res://textures/candle.png" id="12_a8y0u"]
-[ext_resource type="Texture2D" uid="uid://br6yqw3p8dpos" path="res://textures/health.png" id="13_jkv2x"]
-[ext_resource type="Texture2D" uid="uid://dkipjrxale3sa" path="res://textures/hourglass.png" id="14_jbj1t"]
 [ext_resource type="PackedScene" uid="uid://bf2cghmy3br3q" path="res://scenes/menu.tscn" id="15_jkv2x"]
 
 [sub_resource type="Animation" id="Animation_o6xl0"]
@@ -274,6 +271,3 @@ drag_bottom_margin = 0.1
 stream = ExtResource("8_tipki")
 autoplay = true
 bus = &"Music"
-
-[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=127929468]
-color = Color(0.90090895, 0.90025246, 0.8801862, 1)

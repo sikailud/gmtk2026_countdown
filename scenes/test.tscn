@@ -1,0 +1,17 @@
+[gd_scene format=4 uid="uid://4bewv0udj81s"]
+
+[ext_resource type="PackedScene" uid="uid://cxyjhliuu3400" path="res://scenes/player.tscn" id="1_bl13t"]
+[ext_resource type="TileSet" uid="uid://cwbkcpmfg1ffl" path="res://tilesets/tileset.tres" id="2_iyx0m"]
+[ext_resource type="PackedScene" uid="uid://2y3nga1288xx" path="res://scenes/background.tscn" id="3_iyx0m"]
+
+[node name="Test" type="Node2D" unique_id=485148301]
+
+[node name="Player" parent="." unique_id=835197598 instance=ExtResource("1_bl13t")]
+position = Vector2(596, 813)
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=143009841]
+position = Vector2(-2, 0)
+tile_map_data = PackedByteArray("AAABAAgAAAABAAMAAAACAAgAAAABAAMAAAADAAgAAAABAAMAAAAEAAgAAAAFAAUAAAAFAAgAAAAEAAMAAAAGAAgAAAABAAMAAAAHAAgAAAABAAMAAAAEAAcAAAAAAAAAAAAFAAcAAAACAAAAAAABAAUAAAABAAYAAAACAAUAAAACAAMAAAABAAYAAAADAAIAAAAAAAgAAAABAAMAAAAIAAgAAAABAAMAAAAAAAUAAAAAAAMAAAAFAAQAAAAAAAMAAAAGAAQAAAAAAAcAAAAHAAQAAAACAAMAAAAGAAMAAAADAAAAAAD//wgAAAAAAAMAAAAJAAgAAAACAAMAAAAGAAcAAAAEAAAAAAAHAAcAAAAEAAAAAAA=")
+tile_set = ExtResource("2_iyx0m")
+
+[node name="Background" parent="." unique_id=2063045822 instance=ExtResource("3_iyx0m")]

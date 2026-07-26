@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://2y3nga1288xx"]
+
+[ext_resource type="Script" uid="uid://c5462bv71hogk" path="res://scripts/background.gd" id="1_jougr"]
+[ext_resource type="Shader" uid="uid://cwrxey6dyv4i0" path="res://shaders/background.gdshader" id="2_cbsqf"]
+[ext_resource type="Texture2D" uid="uid://ca3vysk0361uy" path="res://textures/background_sky.png" id="3_wisxt"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tipki"]
+shader = ExtResource("2_cbsqf")
+shader_parameter/scroll = Vector2(0, 0)
+shader_parameter/repeat = Vector2(1, 1)
+
+[node name="Background" type="CanvasLayer" unique_id=2063045822]
+layer = -1
+script = ExtResource("1_jougr")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1918391027]
+material = SubResource("ShaderMaterial_tipki")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_wisxt")
+expand_mode = 1
+stretch_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=2135383282]
